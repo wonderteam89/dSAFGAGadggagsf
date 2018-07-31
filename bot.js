@@ -15,7 +15,7 @@ const prefix = "#";
 
 const child_process = require("child_process");
 const adminprefix = "#";
-const devs = ['419212015098134538'];
+const devs = ['408136927259131905'];
 
 client.on('message', message => {
 if(message.content === adminprefix + "restart") {
@@ -29,7 +29,7 @@ if(message.content === adminprefix + "restart") {
   
   });
 
-const developers = '419212015098134538';
+const developers = '408136927259131905';
 const admin = "#";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
@@ -59,7 +59,7 @@ if (message.content.startsWith(admin + 'setavatar')) {
 
 client.on('message', message => {
   if(!message.channel.guild) return;
-     if(message.author.id !== '419212015098134538') return;
+     if(message.author.id !== '408136927259131905') return;
 if(message.content.startsWith(prefix +'bc')) {
 if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
 if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
