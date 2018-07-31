@@ -10,11 +10,11 @@ const r1 = require('snekfetch');
 const Canvas = require("canvas");
 const jimp = require('jimp')
 
-const prefix = "#";
+const prefix = "?";
 
 
 const child_process = require("child_process");
-const adminprefix = "#";
+const adminprefix = "?";
 const devs = ['408136927259131905'];
 
 client.on('message', message => {
@@ -30,7 +30,7 @@ if(message.content === adminprefix + "restart") {
   });
 
 const developers = '408136927259131905';
-const admin = "#";
+const admin = "?";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
